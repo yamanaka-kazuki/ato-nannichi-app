@@ -10,6 +10,7 @@ import Vue from 'vue';
 // import VueRouter from 'vue-router';
 import HeaderComponent from './components/HeaderComponent.vue';
 import inputComponent from './components/inputComponent.vue';
+import ItemListComponent from './components/ItemListComponent.vue';
 
 /**
  * The following block of code may be used to automatically register your
@@ -34,6 +35,11 @@ Vue.component(
     require('./components/inputComponent.vue').default,
 );
 
+Vue.component(
+    'item-list-component',
+    require('./components/ItemListComponent.vue').default,
+);
+
 // const router = new VueRouter({
 //     mode: 'history',
 //     routes: [],
@@ -50,5 +56,6 @@ const app = new Vue({
     components: {
         HeaderComponent,
         inputComponent,
+        ItemListComponent,
     },
 });

@@ -11,6 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(GoalsTableSeeder::class);
+        // $this->call(GoalsTableSeeder::class);
+
+        \App\Item::truncate();
     }
 }

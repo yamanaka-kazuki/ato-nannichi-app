@@ -16,6 +16,7 @@
 <div id="app">
     <header-component></header-component>
     <input-component></input-component>
+    <item-list-component></item-list-component>
     <router-view></router-view>
 </div>
 <!-- Scripts -->
