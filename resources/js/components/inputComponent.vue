@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="container">
+        <h2 class="text-center">ATO-NANNICHI</h2>
         <form class="d-flex justify-content-center mt-4" v-on:submit.prevent>
             <div class="form-group">
                 <input

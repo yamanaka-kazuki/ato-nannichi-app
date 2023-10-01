@@ -11,6 +11,7 @@ import Vue from 'vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 import inputComponent from './components/inputComponent.vue';
 import ItemListComponent from './components/ItemListComponent.vue';
+import CardTileComponent from './components/CardTileComponent.vue';
 
 /**
  * The following block of code may be used to automatically register your
@@ -40,6 +41,11 @@ Vue.component(
     require('./components/ItemListComponent.vue').default,
 );
 
+Vue.component(
+    'card-tile-component',
+    require('./components/CardTileComponent.vue').default,
+);
+
 // const router = new VueRouter({
 //     mode: 'history',
 //     routes: [],
@@ -57,5 +63,6 @@ const app = new Vue({
         HeaderComponent,
         inputComponent,
         ItemListComponent,
+        CardTileComponent,
     },
 });

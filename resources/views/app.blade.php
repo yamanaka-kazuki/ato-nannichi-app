@@ -16,7 +16,7 @@
 <div id="app">
     <header-component></header-component>
     <input-component></input-component>
-    <item-list-component></item-list-component>
+    <card-tile-component></card-tile-component>
     <router-view></router-view>
 </div>
 <!-- Scripts -->

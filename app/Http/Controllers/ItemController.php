@@ -14,4 +14,9 @@ class ItemController extends Controller
     public function store(Request $request){
         return Item::create($request->all());
     }
+
+    public function delete($id){
+        Item::find($id)->delete();
+        return redirect()->route('item.index');
+    }
 }
